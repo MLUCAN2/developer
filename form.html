@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is a form page for my software development site for people to reach out to me. ">
+    <meta name="keywords" content="Form">
+    <meta name="author" content="Myron Lucan">
+    <link rel="stylesheet" type="text/css" href="LucanMyronStyleSheet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Software Developer Form</title>
+</head>
+<body>
+    <header>
+        <h1>Software Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="LucanMyronHomePage.html">Home</a></li>
+                <li><a href="table.html">Tables</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="form-container">
+       <!-- Broken link -->
+        <form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+            <h2>Contact-Me</h2>
+            <!-- Name section -->
+            <fieldset>
+                <legend>Your Name:</legend>
+                <input type="text" name="name" placeholder="First Name:"><br>
+                <input type="text" name="name" placeholder="Last Name:"><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Who you represent:</legend>
+                <select name="Business">
+                    <option>Non-Profit</option>
+                    <option>For-Profit Business</option>
+                    <option>Private</option>
+                    
+                </select>
+            </fieldset>
+            <br>
+            <!-- Site rating section -->
+            <fieldset>
+                <legend>Please rate this site:</legend>
+                <input type="radio" name="request" value="1">1-Needs a lot of work<br>
+                <input type="radio" name="request" value="2">2-Needs improvement<br>
+                <input type="radio" name="request" value="3">3-Alright<br>
+                <input type="radio" name="request" value="4">4-Great<br>
+                <input type="radio" name="request" value="5">5-Amazing, best site I've ever seen!<br>
+            </fieldset>
+            <br>
+            <!-- Purpose Section -->
+            <fieldset>
+                <legend>What can I do for you?</legend>
+                <input type="checkbox" name="request" value="update">Update website<br>
+                <input type="checkbox" name="request" value="build">Build new site<br>
+                <input type="checkbox" name="request" value="question">General questions<br>
+            </fieldset>
+            <br>
+            <!-- Comments Sections -->
+            <fieldset>
+                <legend>Specific Concerns:</legend>
+                    <textarea name="comments" placeholder="Add your comments here:" rows="12" cols="40"></textarea>
+            </fieldset>
+            <br>
+            <div class="form-buttons">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </section>
+    
+</body>
+</html>

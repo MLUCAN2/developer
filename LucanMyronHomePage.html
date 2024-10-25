@@ -12,29 +12,28 @@
 <body>
     <!-- Header and Nav -->
     <header>
-        <h1 onmouseover="style.color= 'white'" onmouseout="style.color='black'" >Software Development</h1>
+        <h1>Software Development</h1>
         <nav>
             <ul>
-                <li><a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="table.html">Tables</a></li>
-                <li><a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="about.html">About</a></li>
-                <li><a onmouseover="style.color= 'white'" onmouseout="style.color='black'" href="form.html">Contact-Me</a></li>
+                <li><a onmouseover="style.color= 'black'" onmouseout="style.color='white'" href="table.html">Tables</a></li>
+                <li><a onmouseover="style.color= 'black'" onmouseout="style.color='white'" href="about.html">About</a></li>
+                <li><a onmouseover="style.color= 'black'" onmouseout="style.color='white'" href="form.html">Contact-Me</a></li>
             </ul>
         </nav>
     </header>
+    <h2>About the Job:</h2>
     <section class="job">
-        <h1>About the Job:</h1>
         <section class="job-desc">
             <!-- Job Description -->
             <h3>Job Description</h3>
             <p> 
-                Software Developer is sort of a blanket term. The duties of a developer can range from creating software and applications, 
+                A Software Developer is sort of a blanket term. The duties of a developer can range from creating software and applications, 
                 designing machine code, developing video games, updating existing software, and so much more. A good software developer
                 is knowledgeable in a few different coding languages. While they don't typically need to be an expert it is preferred that 
                 developers, new and seasoned, be familiar with concepts like software development life cycles (SDLCs), Object Oriented Programming,
                 testing, and more.
             </p>
         </section>
-        <br>
         <!-- Required Skills -->
         <section class="job-skills">
             <h3>Required Skills</h3>
@@ -46,7 +45,6 @@
             </p>
 
         </section>
-        <br>
         <!-- Training Involved -->
         <section class="training">
             <h3>Required Training</h3>
@@ -60,7 +58,6 @@
             </p>
 
         </section>
-        <br>
         <!-- Expected Salary -->
         <section class="salary">
             <h3>Expected Salary</h3>
@@ -72,14 +69,24 @@
             </p>
         </section>
     </section>
-    <br>
+    <!-- Additional Info -->
+    <button onclick="showLearning()">Click to Reveal</button>
     <section class="learning">
-        <h3>Click below to learn more:</h3>
-        <a href="https://www.codecademy.com/learn/learn-java"><img id="java" alt="java" src="img/Java-Logo.png" width="250" height="200"></a>
-        <a href="https://www.codecademy.com/learn/introduction-to-javascript"><img id="js" alt="javascript" src="img/JS.png" width="250" height="200"></a>
-        <a href="https://www.codecademy.com/learn/learn-python-3"><img id="python" alt="python" src="img/python.png" width="200" height="200"></a>
-
+        <h3>Learn more below:</h3>
+        <div class="img-links">
+            <a href="https://www.codecademy.com/learn/learn-java"><img id="java" alt="java" src="img/Java-Logo.png"></a>
+            <a href="https://www.codecademy.com/learn/introduction-to-javascript"><img id="js" alt="javascript" src="img/JS.png"></a>
+            <a href="https://www.codecademy.com/learn/learn-python-3"><img id="python" alt="python" src="img/python.png"></a>
+        </div>
     </section>
+    <!-- Button function -->
+    <script>
+        function showLearning(){
+            const learningSection=document.querySelector('.learning')
+            // Controls the click action, if it is hidden then it will display when button is clicked and vice versa
+            learningSection.style.display=learningSection.style.display==='none'|| learningSection.style.display===''?'block':'none';
+        }
+    </script>
 
 </body>
 </html>
