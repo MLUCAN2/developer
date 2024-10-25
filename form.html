@@ -16,7 +16,6 @@
             <ul>
                 <li><a href="LucanMyronHomePage.html">Home</a></li>
                 <li><a href="table.html">Tables</a></li>
-                <li><a href="about.html">About</a></li>
             </ul>
         </nav>
     </header>
@@ -32,6 +31,7 @@
                 <input type="text" name="name" placeholder="Last Name:"><br>
             </fieldset>
             <br>
+            <!-- Business section -->
             <fieldset>
                 <legend>Who you represent:</legend>
                 <select name="Business">
@@ -42,14 +42,13 @@
                 </select>
             </fieldset>
             <br>
-            <!-- Site rating section -->
+            <!-- Competency section -->
             <fieldset>
-                <legend>Please rate this site:</legend>
-                <input type="radio" name="request" value="1">1-Needs a lot of work<br>
-                <input type="radio" name="request" value="2">2-Needs improvement<br>
-                <input type="radio" name="request" value="3">3-Alright<br>
-                <input type="radio" name="request" value="4">4-Great<br>
-                <input type="radio" name="request" value="5">5-Amazing, best site I've ever seen!<br>
+                <legend>Level of competency you are seeking</legend>
+                <input type="radio" name="request" value="1">1-5 years<br>
+                <input type="radio" name="request" value="2">5-10 years<br>
+                <input type="radio" name="request" value="3">10-20 years<br>
+                <input type="radio" name="request" value="4">+20 years<br>
             </fieldset>
             <br>
             <!-- Purpose Section -->
@@ -64,6 +63,16 @@
             <fieldset>
                 <legend>Specific Concerns:</legend>
                     <textarea name="comments" placeholder="Add your comments here:" rows="12" cols="40"></textarea>
+            </fieldset>
+            <br>
+            <!-- Site rating section -->
+            <fieldset>
+                <legend>Please rate this site:</legend>
+                <input type="radio" name="request" value="1">1-Needs a lot of work<br>
+                <input type="radio" name="request" value="2">2-Needs improvement<br>
+                <input type="radio" name="request" value="3">3-Alright<br>
+                <input type="radio" name="request" value="4">4-Great<br>
+                <input type="radio" name="request" value="5">5-Amazing, best site I've ever seen!<br>
             </fieldset>
             <br>
             <div class="form-buttons">
